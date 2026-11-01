@@ -1,4 +1,4 @@
-# e621 → ComfyUI Bridge
+﻿# e621 → ComfyUI Bridge
 
 一个 Edge / Chromium 扩展：在 e621 帖子页读取标签，过滤角色和作者，把结果送到本机 ComfyUI 的 Furry 提示词插件。
 
@@ -34,7 +34,7 @@
 ## 前提
 
 - ComfyUI 运行在 `http://127.0.0.1:8188`。
-- 已安装 [comfyui-furry-prompt](https://github.com/<your-name>/comfyui-furry-prompt)。
+- 已安装 [comfyui-furry-prompt](https://github.com/3WCOM17/comfyui-furry-prompt)。
 - ComfyUI 启动时允许本地跨域，例如：
 
 ```bash
@@ -109,3 +109,4 @@ storage
 ## License
 
 MIT。e621 的帖子、图片、标签数据和角色语音不随本仓库分发，且不适用 MIT。
+
