@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "e621 → ComfyUI Furry",
+  "version": "1.4.0",
+  "description": "在 e621 帖子页一键提取词条，过滤角色/作者后填入本地 ComfyUI 中英对照插件。",
+  "permissions": ["clipboardWrite", "storage"],
+  "host_permissions": [
+    "https://e621.net/*",
+    "http://127.0.0.1:8188/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://e621.net/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_title": "e621 → ComfyUI Furry",
+    "default_icon": "icon128.png"
+  }
+}

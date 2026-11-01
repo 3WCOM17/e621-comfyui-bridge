@@ -1,0 +1,65 @@
+.e621-comfy-box {
+  position: fixed;
+  left: 14px;
+  bottom: 14px;
+  z-index: 2147483646;
+  width: 190px;
+  padding: 9px;
+  border-radius: 9px;
+  background: rgba(20, 23, 29, 0.97);
+  border: 1px solid #3a4658;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  color: #e8edf4;
+  font: 12px/1.45 system-ui, "Segoe UI", "Microsoft YaHei", sans-serif;
+}
+.e621-comfy-title {
+  font-weight: 700;
+  color: #f0d36b;
+  margin-bottom: 6px;
+}
+.e621-comfy-row {
+  display: flex;
+  gap: 6px;
+}
+.e621-comfy-row button {
+  flex: 1;
+  padding: 5px 4px;
+  border: 0;
+  border-radius: 5px;
+  background: #2c3a4d;
+  color: #e8edf4;
+  cursor: pointer;
+  font-size: 11px;
+}
+.e621-comfy-row button:hover {
+  background: #3a4d66;
+}
+.e621-comfy-opt {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 7px;
+  color: #9da9b8;
+  font-size: 11px;
+  cursor: pointer;
+}
+.e621-comfy-mode,
+.e621-comfy-replace {
+  flex: 1;
+  min-width: 0;
+  background: #202836;
+  color: #e8edf4;
+  border: 1px solid #344154;
+  border-radius: 4px;
+  font-size: 11px;
+  padding: 2px;
+}
+.e621-comfy-status {
+  margin-top: 6px;
+  color: #9fd0ff;
+  font-size: 11px;
+  word-break: break-word;
+}
+.e621-comfy-status.error {
+  color: #ff9a9a;
+}
